@@ -1,0 +1,52 @@
+.block {
+	position: relative;
+	padding: 20px 15px 20px 20px;
+	bottom: 1px solid #747474;
+	background: #edf2f1;
+    border: 1px solid #b8b4b4;
+	margin: 20px;
+}
+
+.block div {
+	margin-bottom: 20px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.curency-out, .curency-in {
+	font-size: 1.3rem;
+	text-align: right;
+}
+
+.curency-name {
+	line-height: 30px;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.flex-item {
+	-webkit-order: 0;
+    -moz-order: 0;
+    -ms-order: 0;
+    -o-order: 0;
+    order: 0;
+	flex: 1 1 auto;
+	-ms-align-self: auto;
+    align-self: auto;
+}

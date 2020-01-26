@@ -1,0 +1,18 @@
+header {
+  background: #12805f;
+}
+
+.top-bar {
+  padding: 0;
+  font-size: 12px;
+  border-bottom: .4px solid #1b8;
+  min-height: 40px;
+}
+
+.main-header {
+  padding: 20px 0 25px;
+}
+
+.site-title {
+  color: #fff;
+}
