@@ -1,8 +1,22 @@
 import React from 'react';
 import './Footer.css';
-
+import { LINKS } from './footerData';
 
 class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.renderLinks = this.renderLinks.bind(this);
+  }
+
+  renderLinks(elem, index) {
+    return (
+      <li key={index}>
+        <a href={elem.href}>{elem.name}</a>
+      </li>
+    )
+  }
+
   render() {
     return (
      <footer className="footer" id="footer">
@@ -15,21 +29,7 @@ class Footer extends React.Component {
              </div>
              <div className="module-body">
                <ul className="list-unstyled">
-                 <li>
-                   <a href="/contact">Contacts</a>
-                 </li>
-                 <li>
-                   <a href="/d">Guarantees</a>
-                 </li>
-                 <li>
-                   <a href="/s">About</a>
-                 </li>
-                 <li>
-                   <a href="/o">Return Terms</a>
-                 </li>
-                 <li>
-                   <a href="/p">Service Agreement</a>
-                 </li>
+                 {LINKS.map(this.renderLinks)}
                </ul>
              </div>
            </div>
