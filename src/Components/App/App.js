@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Rate from './Components/Rate/Rate';
-import About from './Components/About/About';
-import Point from './Components/Point/Point';
-import Cookie from './Components/Cookie/Cookie';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Rate from '../Rate/Rate';
+import About from '../About/About';
+import Point from '../Point/Point';
+import Cookie from '../Cookie/Cookie';
 
 class App extends React.Component {
   constructor(props) {
